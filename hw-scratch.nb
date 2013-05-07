@@ -1,0 +1,36 @@
+Notebook[{
+Cell["\<\
+Dont forget to disable FileOutlineCache in the FORMAT->OPTIONS INSPECTOR \
+window.\
+\>", "Text",
+ CellChangeTimes->{{3.576956991921134*^9, 3.5769570097884912`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  RowBox[{"NotebookDirectory", "[", "]"}], "]"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{3.574607911965105*^9, 3.574607983313957*^9}],
+
+Cell[BoxData["\<\"/Users/bret/Documents/PSU Projects/qm619-hw/hw1\"\>"], \
+"Output",
+ InitializationCell->True,
+ CellChangeTimes->{
+  3.574607983762116*^9, 3.575740995295933*^9, {3.575741107494604*^9, 
+   3.5757411078495073`*^9}, 3.57626498270372*^9, 3.576443559061656*^9}]
+}, Open  ]]
+},
+WindowSize->{740, 656},
+WindowMargins->{{5, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 5, \
+2011)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]]}, Visible -> False, 
+  FrontEndVersion -> 
+  "8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 5, 2011)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"]
+]
+
