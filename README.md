@@ -6,7 +6,7 @@ A simple template for typing homework in LaTeX.
  
  [found at](http://tex.stackexchange.com/questions/31183/class-file-for-homework-assignments)
 
-When using mactex, place bachw.cls in `~/Library/texmf/tex/latex/local` or just place a copy of bachw.cls into the working directory of the new homework document.
+When using mactex, place `bachw.cls` in `~/Library/texmf/tex/latex/local` or just place a copy of bachw.cls into the working directory of the new homework document.
 
 See the template.tex file as an example of how to use.
 
@@ -25,7 +25,7 @@ See the template.tex file as an example of how to use.
 - [{empheq}](http://texdoc.net/texmf-dist/doc/latex/mh/empheq.pdf)
 - [{ifthen}](http://www.ctan.org/pkg/ifthen)
 - [{color}](http://ctan.sharelatex.com/tex-archive/macros/latex/required/graphics/grfguide.pdf)
-- [{amsmath}](ftp://ftp.ams.org/pub/tex/doc/amsmath/amsldoc.pdf)
+- [{amsmath}](http://mirrors.concertpass.com/tex-archive/macros/latex/required/amslatex/math/amsldoc.pdf)
 - [{braket}](http://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/braket/braket.pdf)
 - [{cancel}](http://get-software.net/macros/latex/contrib/cancel/cancel.pdf)
 - [{mathtools}](http://mirror.math.ku.edu/tex-archive/macros/latex/contrib/mathtools/mathtools.pdf)
