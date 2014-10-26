@@ -1,24 +1,36 @@
 %=====================================================================
+% With strong influence from:
+% bachw.cls
+% Provide bachw.cls class
+%=====================================================================
+
+%=====================================================================
+% Modified from:
 % jhwhw.cls
-% Provide jhwhw.cls class
+% I want one file that contains all the tools to write physics 
+% homework.  
+% PDF sync is broken by this cls to some degree.  Would be nice to 
+% Write this from scratch at some point.
 %=====================================================================
 
 %=====================================================================
 % Identification
 %=====================================================================
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{jhwhw}[2009/02/11 Justin Wilson's Homework Class]
+\ProvidesClass{bachw}[2014/10/25 Bret Comnes's Homework Class]
 
 \LoadClass[letterpaper, 12pt]{report}
-%\RequirePackage{jhwmath} Personal style file I use.
 
 \RequirePackage{fancyhdr}
 \RequirePackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{empheq}
 \RequirePackage{ifthen}
-%\RequirePackage{jhwgraphics} Another personal style file I use.
-
+\RequirePackage{color}
+\RequirePackage{amsmath}
+\RequirePackage{braket}
+\RequirePackage{cancel}
+\RequirePackage{mathtools}
 
 %=====================================================================
 % Commands
@@ -35,7 +47,10 @@
     pdfauthor   = {\@author},
     pdftitle    = {\@title},
     pdfcreator  = {LaTeX with hyperref package},
-    pdfproducer = {dvips + ps2pdf}
+    pdfproducer = {dvips + ps2pdf},
+	colorlinks  = {true},
+	linkcolor   = {blue},
+	urlcolor	= {blue}
   }
 \else                                            %PDFLaTeX
   \RequirePackage[pdftex,bookmarks=true]{hyperref}
@@ -43,7 +58,10 @@
     pdfauthor   = {\@author},
     pdftitle    = {\@title},
     pdfcreator  = {LaTeX with hyperref package},
-    pdfproducer = {dvips + ps2pdf}
+    pdfproducer = {dvips + ps2pdf},
+	colorlinks  = {true},
+	linkcolor   = {blue},
+	urlcolor	= {blue}
   }
 \pdfadjustspacing=1
 \fi
@@ -59,31 +77,11 @@
 
 \newcommand*{\anyproblem}[1]{\newpage\subsection*{#1}}
 \newcommand*{\problem}[1]{\stepcounter{ProblemNum} %
-   \anyproblem{Problem \theProblemNum. \; #1}}
+  \anyproblem{Problem \theProblemNum. \; #1}}
 \newcommand*{\soln}[1]{\subsubsection*{#1}}
 \newcommand*{\solution}{\soln{Solution}}
-\renewcommand*{\part}{\stepcounter{SubProblemNum} %
+\newcommand*{\subproblem}{\stepcounter{SubProblemNum} %
   \soln{Part (\theSubProblemNum)}}
 
-\renewcommand{\theenumi}{(\alph{enumi})}
-\renewcommand{\labelenumi}{\theenumi}
-\renewcommand{\theenumii}{\roman{enumii}}
-
-% \def\problemmark{}
-
-% % Typesetting problems
-
-% % \newcommand*{\prob}[1]{\newpage \noindent \textbf{\Large #1}}
-% % \newcommand*{\problem}[1]{\stepcounter{ProblemNum} \prob{Problem %
-% % \theProblemNum.}}
-% % \newcommand*{\soln}[1]{\\ \noindent \textbf{\Large #1}}
-% % \newcommand*{\solution}{\soln{Solution}}
-% % \renewcommand*{\part}{\\ \noindent \stepcounter{SubProblemNum} %
-% % \textbf{\Large Part (\theSubProblemNum)}}
-
-% \newcommand\problem{\@startsection{problem}{1}{\z@}%
-%                      {-3.25ex \@plus -1ex \@minus -.2ex}%
-%                      {1.5ex \@plus .2ex}%
-%                      {\normalfont\large\bfseries}}
 
 
