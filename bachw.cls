@@ -31,6 +31,7 @@
 \RequirePackage{braket}
 \RequirePackage{cancel}
 \RequirePackage{mathtools}
+\RequirePackage{gensymb} % For \degree
 
 %=====================================================================
 % Commands
